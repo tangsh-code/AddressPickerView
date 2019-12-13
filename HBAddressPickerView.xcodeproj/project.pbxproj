@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04807991239A46D900C61CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04807990239A46D900C61CA4 /* AppDelegate.m */; };
+		04807994239A46D900C61CA4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04807993239A46D900C61CA4 /* SceneDelegate.m */; };
+		04807997239A46D900C61CA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04807996239A46D900C61CA4 /* ViewController.m */; };
+		0480799A239A46D900C61CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04807998239A46D900C61CA4 /* Main.storyboard */; };
+		0480799C239A46DB00C61CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480799B239A46DB00C61CA4 /* Assets.xcassets */; };
+		0480799F239A46DB00C61CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0480799D239A46DB00C61CA4 /* LaunchScreen.storyboard */; };
+		048079A2239A46DB00C61CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048079A1239A46DB00C61CA4 /* main.m */; };
+		048079AC239A46DB00C61CA4 /* HBAddressPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 048079AB239A46DB00C61CA4 /* HBAddressPickerViewTests.m */; };
+		048079B7239A46DB00C61CA4 /* HBAddressPickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 048079B6239A46DB00C61CA4 /* HBAddressPickerViewUITests.m */; };
+		048079C6239A46F800C61CA4 /* HBAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048079C5239A46F800C61CA4 /* HBAddressPickerView.m */; };
+		048079C8239A470200C61CA4 /* HBAddressPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048079C7239A470200C61CA4 /* HBAddressPickerView.xib */; };
+		048079CA239A4F4700C61CA4 /* city_code.json in Resources */ = {isa = PBXBuildFile; fileRef = 048079C9239A4F4700C61CA4 /* city_code.json */; };
+		048079CD239A569A00C61CA4 /* HBLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048079CC239A569A00C61CA4 /* HBLocationModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048079A8239A46DB00C61CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04807984239A46D900C61CA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0480798B239A46D900C61CA4;
+			remoteInfo = HBAddressPickerView;
+		};
+		048079B3239A46DB00C61CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04807984239A46D900C61CA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0480798B239A46D900C61CA4;
+			remoteInfo = HBAddressPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0480798C239A46D900C61CA4 /* HBAddressPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBAddressPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0480798F239A46D900C61CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04807990239A46D900C61CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04807992239A46D900C61CA4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		04807993239A46D900C61CA4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		04807995239A46D900C61CA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04807996239A46D900C61CA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04807999239A46D900C61CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0480799B239A46DB00C61CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0480799E239A46DB00C61CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		048079A0239A46DB00C61CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048079A1239A46DB00C61CA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		048079A7239A46DB00C61CA4 /* HBAddressPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBAddressPickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		048079AB239A46DB00C61CA4 /* HBAddressPickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAddressPickerViewTests.m; sourceTree = "<group>"; };
+		048079AD239A46DB00C61CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048079B2239A46DB00C61CA4 /* HBAddressPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBAddressPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		048079B6239A46DB00C61CA4 /* HBAddressPickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAddressPickerViewUITests.m; sourceTree = "<group>"; };
+		048079B8239A46DB00C61CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048079C4239A46F800C61CA4 /* HBAddressPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBAddressPickerView.h; sourceTree = "<group>"; };
+		048079C5239A46F800C61CA4 /* HBAddressPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAddressPickerView.m; sourceTree = "<group>"; };
+		048079C7239A470200C61CA4 /* HBAddressPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBAddressPickerView.xib; sourceTree = "<group>"; };
+		048079C9239A4F4700C61CA4 /* city_code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city_code.json; sourceTree = "<group>"; };
+		048079CB239A569A00C61CA4 /* HBLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBLocationModel.h; sourceTree = "<group>"; };
+		048079CC239A569A00C61CA4 /* HBLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBLocationModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04807989239A46D900C61CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079A4239A46DB00C61CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079AF239A46DB00C61CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04807983239A46D900C61CA4 = {
+			isa = PBXGroup;
+			children = (
+				0480798E239A46D900C61CA4 /* HBAddressPickerView */,
+				048079AA239A46DB00C61CA4 /* HBAddressPickerViewTests */,
+				048079B5239A46DB00C61CA4 /* HBAddressPickerViewUITests */,
+				0480798D239A46D900C61CA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0480798D239A46D900C61CA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0480798C239A46D900C61CA4 /* HBAddressPickerView.app */,
+				048079A7239A46DB00C61CA4 /* HBAddressPickerViewTests.xctest */,
+				048079B2239A46DB00C61CA4 /* HBAddressPickerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0480798E239A46D900C61CA4 /* HBAddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				0480798F239A46D900C61CA4 /* AppDelegate.h */,
+				04807990239A46D900C61CA4 /* AppDelegate.m */,
+				04807992239A46D900C61CA4 /* SceneDelegate.h */,
+				04807993239A46D900C61CA4 /* SceneDelegate.m */,
+				04807995239A46D900C61CA4 /* ViewController.h */,
+				04807996239A46D900C61CA4 /* ViewController.m */,
+				048079C4239A46F800C61CA4 /* HBAddressPickerView.h */,
+				048079C5239A46F800C61CA4 /* HBAddressPickerView.m */,
+				048079C7239A470200C61CA4 /* HBAddressPickerView.xib */,
+				048079CB239A569A00C61CA4 /* HBLocationModel.h */,
+				048079CC239A569A00C61CA4 /* HBLocationModel.m */,
+				048079C9239A4F4700C61CA4 /* city_code.json */,
+				04807998239A46D900C61CA4 /* Main.storyboard */,
+				0480799B239A46DB00C61CA4 /* Assets.xcassets */,
+				0480799D239A46DB00C61CA4 /* LaunchScreen.storyboard */,
+				048079A0239A46DB00C61CA4 /* Info.plist */,
+				048079A1239A46DB00C61CA4 /* main.m */,
+			);
+			path = HBAddressPickerView;
+			sourceTree = "<group>";
+		};
+		048079AA239A46DB00C61CA4 /* HBAddressPickerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				048079AB239A46DB00C61CA4 /* HBAddressPickerViewTests.m */,
+				048079AD239A46DB00C61CA4 /* Info.plist */,
+			);
+			path = HBAddressPickerViewTests;
+			sourceTree = "<group>";
+		};
+		048079B5239A46DB00C61CA4 /* HBAddressPickerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				048079B6239A46DB00C61CA4 /* HBAddressPickerViewUITests.m */,
+				048079B8239A46DB00C61CA4 /* Info.plist */,
+			);
+			path = HBAddressPickerViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0480798B239A46D900C61CA4 /* HBAddressPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048079BB239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerView" */;
+			buildPhases = (
+				04807988239A46D900C61CA4 /* Sources */,
+				04807989239A46D900C61CA4 /* Frameworks */,
+				0480798A239A46D900C61CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBAddressPickerView;
+			productName = HBAddressPickerView;
+			productReference = 0480798C239A46D900C61CA4 /* HBAddressPickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		048079A6239A46DB00C61CA4 /* HBAddressPickerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048079BE239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerViewTests" */;
+			buildPhases = (
+				048079A3239A46DB00C61CA4 /* Sources */,
+				048079A4239A46DB00C61CA4 /* Frameworks */,
+				048079A5239A46DB00C61CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048079A9239A46DB00C61CA4 /* PBXTargetDependency */,
+			);
+			name = HBAddressPickerViewTests;
+			productName = HBAddressPickerViewTests;
+			productReference = 048079A7239A46DB00C61CA4 /* HBAddressPickerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		048079B1239A46DB00C61CA4 /* HBAddressPickerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048079C1239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerViewUITests" */;
+			buildPhases = (
+				048079AE239A46DB00C61CA4 /* Sources */,
+				048079AF239A46DB00C61CA4 /* Frameworks */,
+				048079B0239A46DB00C61CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048079B4239A46DB00C61CA4 /* PBXTargetDependency */,
+			);
+			name = HBAddressPickerViewUITests;
+			productName = HBAddressPickerViewUITests;
+			productReference = 048079B2239A46DB00C61CA4 /* HBAddressPickerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04807984239A46D900C61CA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					0480798B239A46D900C61CA4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					048079A6239A46DB00C61CA4 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 0480798B239A46D900C61CA4;
+					};
+					048079B1239A46DB00C61CA4 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 0480798B239A46D900C61CA4;
+					};
+				};
+			};
+			buildConfigurationList = 04807987239A46D900C61CA4 /* Build configuration list for PBXProject "HBAddressPickerView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04807983239A46D900C61CA4;
+			productRefGroup = 0480798D239A46D900C61CA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0480798B239A46D900C61CA4 /* HBAddressPickerView */,
+				048079A6239A46DB00C61CA4 /* HBAddressPickerViewTests */,
+				048079B1239A46DB00C61CA4 /* HBAddressPickerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0480798A239A46D900C61CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0480799F239A46DB00C61CA4 /* LaunchScreen.storyboard in Resources */,
+				048079CA239A4F4700C61CA4 /* city_code.json in Resources */,
+				048079C8239A470200C61CA4 /* HBAddressPickerView.xib in Resources */,
+				0480799C239A46DB00C61CA4 /* Assets.xcassets in Resources */,
+				0480799A239A46D900C61CA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079A5239A46DB00C61CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079B0239A46DB00C61CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04807988239A46D900C61CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048079C6239A46F800C61CA4 /* HBAddressPickerView.m in Sources */,
+				04807997239A46D900C61CA4 /* ViewController.m in Sources */,
+				048079CD239A569A00C61CA4 /* HBLocationModel.m in Sources */,
+				04807991239A46D900C61CA4 /* AppDelegate.m in Sources */,
+				048079A2239A46DB00C61CA4 /* main.m in Sources */,
+				04807994239A46D900C61CA4 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079A3239A46DB00C61CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048079AC239A46DB00C61CA4 /* HBAddressPickerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048079AE239A46DB00C61CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048079B7239A46DB00C61CA4 /* HBAddressPickerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048079A9239A46DB00C61CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0480798B239A46D900C61CA4 /* HBAddressPickerView */;
+			targetProxy = 048079A8239A46DB00C61CA4 /* PBXContainerItemProxy */;
+		};
+		048079B4239A46DB00C61CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0480798B239A46D900C61CA4 /* HBAddressPickerView */;
+			targetProxy = 048079B3239A46DB00C61CA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04807998239A46D900C61CA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04807999239A46D900C61CA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0480799D239A46DB00C61CA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0480799E239A46DB00C61CA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048079B9239A46DB00C61CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		048079BA239A46DB00C61CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048079BC239A46DB00C61CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048079BD239A46DB00C61CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		048079BF239A46DB00C61CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBAddressPickerView.app/HBAddressPickerView";
+			};
+			name = Debug;
+		};
+		048079C0239A46DB00C61CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HBAddressPickerView.app/HBAddressPickerView";
+			};
+			name = Release;
+		};
+		048079C2239A46DB00C61CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HBAddressPickerView;
+			};
+			name = Debug;
+		};
+		048079C3239A46DB00C61CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3FJ5PY59X;
+				INFOPLIST_FILE = HBAddressPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HB.HBAddressPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HBAddressPickerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04807987239A46D900C61CA4 /* Build configuration list for PBXProject "HBAddressPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048079B9239A46DB00C61CA4 /* Debug */,
+				048079BA239A46DB00C61CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048079BB239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048079BC239A46DB00C61CA4 /* Debug */,
+				048079BD239A46DB00C61CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048079BE239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048079BF239A46DB00C61CA4 /* Debug */,
+				048079C0239A46DB00C61CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048079C1239A46DB00C61CA4 /* Build configuration list for PBXNativeTarget "HBAddressPickerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048079C2239A46DB00C61CA4 /* Debug */,
+				048079C3239A46DB00C61CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04807984239A46D900C61CA4 /* Project object */;
+}
