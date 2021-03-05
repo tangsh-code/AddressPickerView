@@ -79,15 +79,16 @@
         self.areaList = first.list;
     }
     [self.pickerView reloadAllComponents];
+    
+    // 默认数据
+    self.selectProvince = self.provinceList.firstObject;
+    self.selectCity = self.cityList.firstObject;
+    self.selectArea = self.areaList.firstObject;
 }
 
 - (void)show
 {
-    if (@available(iOS 13.0, *)) {
-        [[[UIApplication sharedApplication].windows lastObject] addSubview:self];
-    } else {
-        [[UIApplication sharedApplication].keyWindow addSubview:self];
-    }
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
 }
 
 - (void)dismiss
@@ -174,8 +175,14 @@
         //查出区的数据
         HBLocationModel * firstCity = self.cityList.firstObject;
         self.areaList = firstCity.list;
-        self.selectArea = self.areaList[0];
-        
+        if (self.areaList.count) {
+            self.selectArea = self.areaList[0];
+        } else {
+            HBLocationModel * none = [[HBLocationModel alloc] init];
+            none.name = @"";
+            none.code = @"";
+            self.selectArea = none;
+        }        
         [self.pickerView reloadComponent:1];
         [self.pickerView reloadComponent:2];
     } else if (component == 1){
